@@ -1,0 +1,184 @@
+23:26:08.845 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Starting BillTestApplication on PC201806030242 with PID 4556 (started by Administrator in F:\spring boot\bill-test)
+23:26:09.251 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - No active profile set, falling back to default profiles: default
+23:26:10.636 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+23:26:11.702 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a96be2: startup date [Sat Sep 16 23:26:11 CST 2017]; root of context hierarchy
+23:26:16.781 logback [restartedMain] INFO  o.s.i.config.IntegrationRegistrar - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+23:26:17.453 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+23:26:17.469 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+23:26:18.890 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79ba6442] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:26:19.081 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:26:19.084 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:26:22.194 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+23:26:22.253 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:26:22.256 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+23:26:23.415 logback [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23:26:23.437 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:26:23.438 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 11736 ms
+23:26:23.964 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+23:26:23.969 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:26:23.970 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:26:23.970 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:26:23.970 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:26:27.256 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a96be2: startup date [Sat Sep 16 23:26:11 CST 2017]; root of context hierarchy
+23:26:27.357 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public java.lang.Object com.accp.spring.controller.BillController.user()
+23:26:27.359 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sayhello],methods=[POST]}" onto public java.lang.Object com.accp.spring.controller.BillController.sayhello(com.accp.spring.domain.Bill,org.springframework.ui.Model)
+23:26:27.360 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/indexs]}" onto public org.springframework.web.servlet.ModelAndView com.accp.spring.controller.BillController.indexs()
+23:26:27.361 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.Object com.accp.spring.controller.BillController.value()
+23:26:27.361 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/init]}" onto public java.lang.Object com.accp.spring.controller.BillController.init(org.springframework.ui.Model)
+23:26:27.361 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.Object com.accp.spring.controller.BillController.index()
+23:26:27.365 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:26:27.365 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:26:27.767 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:26:27.767 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:26:28.158 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:26:30.314 logback [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:26:30.491 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+23:26:31.263 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:26:31.590 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:26:31.603 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+23:26:31.604 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+23:26:31.604 logback [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application:8080.errorChannel' has 1 subscriber(s).
+23:26:31.604 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+23:26:31.629 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:26:31.651 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:26:31.735 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:26:31.991 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+23:26:32.051 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Started BillTestApplication in 28.357 seconds (JVM running for 39.477)
+23:32:06.374 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Starting BillTestApplication on PC201806030242 with PID 1484 (started by Administrator in F:\spring boot\bill-test)
+23:32:06.375 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - No active profile set, falling back to default profiles: default
+23:32:06.801 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+23:32:06.960 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1340091: startup date [Sat Sep 16 23:32:06 CST 2017]; root of context hierarchy
+23:32:08.922 logback [restartedMain] INFO  o.s.i.config.IntegrationRegistrar - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+23:32:09.615 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+23:32:09.622 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+23:32:10.022 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4f2f65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:32:10.213 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:32:10.215 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:32:11.073 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+23:32:11.101 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:32:11.102 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+23:32:11.674 logback [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23:32:11.681 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:32:11.681 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4722 ms
+23:32:11.965 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+23:32:11.971 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:32:11.971 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:32:11.971 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:32:11.971 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:32:13.178 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1340091: startup date [Sat Sep 16 23:32:06 CST 2017]; root of context hierarchy
+23:32:13.260 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public java.lang.Object com.accp.spring.controller.BillController.user()
+23:32:13.267 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sayhello],methods=[POST]}" onto public java.lang.Object com.accp.spring.controller.BillController.sayhello(com.accp.spring.domain.Bill,org.springframework.ui.Model)
+23:32:13.267 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/indexs]}" onto public org.springframework.web.servlet.ModelAndView com.accp.spring.controller.BillController.indexs()
+23:32:13.267 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.Object com.accp.spring.controller.BillController.value()
+23:32:13.268 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/init]}" onto public java.lang.Object com.accp.spring.controller.BillController.init(org.springframework.ui.Model)
+23:32:13.268 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.Object com.accp.spring.controller.BillController.index()
+23:32:13.273 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:32:13.273 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:32:13.340 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:32:13.340 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:32:13.422 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:32:14.264 logback [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:32:14.389 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+23:32:14.669 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:32:14.947 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:32:14.970 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+23:32:14.970 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+23:32:14.970 logback [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application:8080.errorChannel' has 1 subscriber(s).
+23:32:14.970 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+23:32:14.987 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:32:15.002 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:32:15.016 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:32:15.066 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+23:32:15.082 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Started BillTestApplication in 9.605 seconds (JVM running for 10.383)
+23:34:07.450 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Starting BillTestApplication on PC201806030242 with PID 7580 (started by Administrator in F:\spring boot\bill-test)
+23:34:07.451 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - No active profile set, falling back to default profiles: default
+23:34:07.772 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+23:34:08.262 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c20307: startup date [Sat Sep 16 23:34:08 CST 2017]; root of context hierarchy
+23:34:10.559 logback [restartedMain] INFO  o.s.i.config.IntegrationRegistrar - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+23:34:11.005 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+23:34:11.015 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+23:34:11.338 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f57c3cff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:34:11.489 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:34:11.496 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:34:12.034 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+23:34:12.055 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:34:12.056 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+23:34:12.714 logback [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23:34:12.720 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:34:12.720 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4458 ms
+23:34:13.060 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+23:34:13.064 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:34:13.065 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:34:13.065 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:34:13.065 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:34:14.171 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c20307: startup date [Sat Sep 16 23:34:08 CST 2017]; root of context hierarchy
+23:34:14.280 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public java.lang.Object com.accp.spring.controller.BillController.user()
+23:34:14.282 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sayhello],methods=[POST]}" onto public java.lang.Object com.accp.spring.controller.BillController.sayhello(com.accp.spring.domain.Bill,org.springframework.ui.Model)
+23:34:14.282 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/indexs]}" onto public org.springframework.web.servlet.ModelAndView com.accp.spring.controller.BillController.indexs()
+23:34:14.283 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.Object com.accp.spring.controller.BillController.value()
+23:34:14.283 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/init]}" onto public java.lang.Object com.accp.spring.controller.BillController.init(org.springframework.ui.Model)
+23:34:14.283 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.Object com.accp.spring.controller.BillController.index()
+23:34:14.288 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:34:14.289 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:34:14.346 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:34:14.346 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:34:14.443 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:34:15.260 logback [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:34:15.403 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+23:34:15.652 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:34:15.883 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:34:16.164 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+23:34:16.165 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+23:34:16.165 logback [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application:8080.errorChannel' has 1 subscriber(s).
+23:34:16.165 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+23:34:16.182 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:34:16.195 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:34:16.208 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:34:16.256 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+23:34:16.267 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Started BillTestApplication in 9.645 seconds (JVM running for 10.684)
+23:36:41.890 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Starting BillTestApplication on PC201806030242 with PID 8000 (started by Administrator in F:\spring boot\bill-test)
+23:36:41.891 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - No active profile set, falling back to default profiles: default
+23:36:42.258 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+23:36:42.421 logback [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1340091: startup date [Sat Sep 16 23:36:42 CST 2017]; root of context hierarchy
+23:36:44.703 logback [restartedMain] INFO  o.s.i.config.IntegrationRegistrar - No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+23:36:45.126 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+23:36:45.136 logback [restartedMain] INFO  o.s.i.c.DefaultConfiguringBeanFactoryPostProcessor - No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+23:36:45.534 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1044391] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:36:45.645 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:36:45.647 logback [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+23:36:46.185 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+23:36:46.202 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+23:36:46.203 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.15
+23:36:46.813 logback [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+23:36:46.826 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:36:46.827 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4406 ms
+23:36:47.115 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+23:36:47.122 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+23:36:47.123 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+23:36:47.123 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+23:36:47.123 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+23:36:48.307 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1340091: startup date [Sat Sep 16 23:36:42 CST 2017]; root of context hierarchy
+23:36:48.396 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user],methods=[GET]}" onto public java.lang.Object com.accp.spring.controller.BillController.user()
+23:36:48.398 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/sayhello],methods=[POST]}" onto public java.lang.Object com.accp.spring.controller.BillController.sayhello(com.accp.spring.domain.Bill,org.springframework.ui.Model)
+23:36:48.399 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/indexs]}" onto public org.springframework.web.servlet.ModelAndView com.accp.spring.controller.BillController.indexs()
+23:36:48.399 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.Object com.accp.spring.controller.BillController.value()
+23:36:48.400 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/init]}" onto public java.lang.Object com.accp.spring.controller.BillController.init(org.springframework.ui.Model)
+23:36:48.400 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/index]}" onto public java.lang.Object com.accp.spring.controller.BillController.index()
+23:36:48.404 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+23:36:48.405 logback [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+23:36:48.498 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:36:48.498 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:36:48.599 logback [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+23:36:49.479 logback [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+23:36:49.594 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService  'taskScheduler'
+23:36:49.871 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+23:36:50.126 logback [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+23:36:50.138 logback [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 0
+23:36:50.138 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+23:36:50.138 logback [restartedMain] INFO  o.s.i.c.PublishSubscribeChannel - Channel 'application:8080.errorChannel' has 1 subscriber(s).
+23:36:50.138 logback [restartedMain] INFO  o.s.i.endpoint.EventDrivenConsumer - started _org.springframework.integration.errorLogger
+23:36:50.153 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:36:50.175 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:36:50.187 logback [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+23:36:50.217 logback [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+23:36:50.224 logback [restartedMain] INFO  c.a.s.controller.BillTestApplication - Started BillTestApplication in 8.98 seconds (JVM running for 9.876)

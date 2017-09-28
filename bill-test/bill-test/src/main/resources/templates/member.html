@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>INSPINIA | Login</title>
+    <script th:src="@{/js/jquery1.9.0.min.js}"></script>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet"/>
+
+    <link th:href="@{/css/animate.css}" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <script>
+      /*  $(function(){
+           $.get("index",{},function (data) {
+                 alert(data.suppliername);
+           })
+        })*/
+    </script>
+
+</head>
+
+<body>
+   <table>
+       <tbody>
+          <tr>
+              <td>会员名称</td>
+               <td>会员年龄</td>
+               <td>会员性别</td>
+               <td>会员邮箱</td>
+          </tr>
+          <div th:if="${not #lists.isEmpty(User)}">
+           <tr th:each="member:${User}">
+                 <td th:text="${member.billno}"></td>
+                 <td th:text="${member.billdate}"></td>
+                 <td th:text="${member.suppliername}"></td>
+                 <td th:text="${member.supplieraddress}"></td>
+              <!--   <td><div th:text="${session.user}"></div></td>-->
+           <td><a th:href="@{'/login/'+${member.billno}}" th:text="${member.suppliername}"></a></td>
+               
+           </tr>
+          </div>
+
+       </tbody>
+       
+   </table>
+   
+
+
+</body>
+</html>
