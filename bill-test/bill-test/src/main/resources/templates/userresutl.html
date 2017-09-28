@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8"></meta>
+    <script th:src="@{/js/jquery1.9.0.min.js}"></script>
+    <script th:inline="javascript">
+         var bill=[[${Bill}]];
+         alert(bill.supplieraddress);
+         console.log(bill.supplieraddress)
+    function getname(obj){
+             alert(obj);
+    }
+    </script>
+ <title>天码营经验: Spring表单提交处理</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+        <div th:text="${Bill.supplieraddress}"></div>
+        <div th:text="${Bill.suppliername}"></div>
+<button th:onclick="'getname(\''+${Bill.supplieraddress}+'\')'">获得名次</button>
+</body>
+</html>
