@@ -1,0 +1,11 @@
+ProdID		varchar(20)	物料编号
+SafeQty 	Integer 	安全存量
+CSafeAllStk	Integer		低于安全存量
+BAllAmt 	Integer		期初总数量
+CAllAmt 	Integer		现有总数量
+BAvgCost 	Float		平均成本
+CAvgCost 	Float		现行平均成本
+BStdCost 	Float		标准成本
+CStdCost 	Float		标准总成本
+BTotalCost	Float		初期总成本
+CAllCost	Float		现行总成本

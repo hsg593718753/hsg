@@ -1,0 +1,9 @@
+BillNo		char(20)   pk	单据编号 	#流水单号日期生成
+CustID		varchar(10) fk	供应商ID 	#链接供应商主文件表
+AddrID		Integer 	供应商地址ID 	#链接供应商地址表
+BillDate	Date		单据日期		#自动生成当前日期或选择日期
+WareID		Integer		仓库		#链接仓库表
+DeparID		Integer	   fk	所属部门		#链接部门表
+Maker		varchar(20)	制单人员		#登陆人员姓名
+permitter	varchar(20)	复核人员		#审核人员姓名
+SalserID	Integer		采购人员 	#部门表中采购人员姓名

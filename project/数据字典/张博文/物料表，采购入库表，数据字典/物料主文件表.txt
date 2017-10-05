@@ -1,0 +1,7 @@
+ProdID		varchar(20) pk	物料编号		
+ClassID 	varchar(20)  fk	物料类别  (物料类别表)
+ProdName	varchar(20)	物料名称
+StdUnitID	varchar(20) fk    计量单位  (计量表)
+ProdSize 	varchar(20)	规格型号
+BarCodeID	varchar(20)	条形码编号
+EngName  	varchar(20)	英文名品

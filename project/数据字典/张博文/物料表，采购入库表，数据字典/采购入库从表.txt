@@ -1,0 +1,13 @@
+ID		Integer    pk	排序列 	
+BillNo		varchar(20)  pk fk	单据编号		#外键对应主表
+PridID		varchar(50)fk	物料编号	(物料主文件表)	
+ProdName	varchar(50)	物料名称
+ProdSize	varchar(20)	规格型号
+StdUnitID	varchar(20)	单位编号
+SQuantity	Integer		数量
+Discount	Float		折数
+SPrice		Float		单价
+TaxAmt		Integer 	税率(%)
+TranType	varchar(20)	来源单别
+FromNo		varchar(20)  fk	来源单号
+MLAppFare	Float		分摊费用

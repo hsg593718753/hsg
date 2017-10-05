@@ -1,0 +1,66 @@
+create table dingdan(
+   CustomerID        int PRIMARY key /*供应商*/,
+   CustAddress       VARCHAR(20)     /*供应商地址*/,
+   BillStyleID       int             /*采购订单类型*/,
+   PriceOftax        int       	     /*单价是否含税（1含/2不含）*/,
+   BillStatus        int             /*单况（1未结案/2已结案/3无效）*/,
+   BillDate          date            /*单据日期*/,
+   BillNo            int             /*单据号码(主键)*/,
+   FactCurrencyName  VARCHAR(20)     /*币别名称*/,
+   ExchRate    	     FLOAT           /*汇率*/,
+   OutAddress        VARCHAR(20)     /*送货地址*/,
+   Maker   	     VARCHAR(20)     /*制单人员*/,
+   Permitter         VARCHAR(20)     /*复核人员*/,
+   DepartID          int             /*所属部门*/,
+  /*DepartName        VARCHAR(20)     所属部门名称,*/
+   ProjectID         int             /*所属项目*/,
+  /*ProjectName       VARCHAR(20)     所属项目名称,*/
+   SalesName         VARCHAR(20)     /*采购人员名称*/
+)
+
+
+create table dingdanneirong(
+   BillNo            int             /*主单ID*/, 
+   SerNo             Int             /*栏号*/,
+   ProdID            Int             /*物料编号*/,
+   ProdName          VARCHAR(20)     /*物料名称*/,
+   ProdSize          VARCHAR(20)     /*规格型号*/,
+   UnitName          VARCHAR(20)     /*单位名称*/,
+   sQuantity         int             /*数量*/,
+   OldPrice          FLOAT           /*折扣前单价*/,
+   Discount          FLOAT           /*折数（%）*/,
+   sPrice            FLOAT           /*单价*/,
+   Amount            FLOAT           /*金额*/,
+   TaxRate           FLOAT           /*税率（%）*/,
+   TaxAmt            FLOAT           /*税额*/,
+   VFTotal           FLOAT           /*含税金额*/,
+   PrelnDate         date            /*预入库日*/,
+   QtyRemain         int             /*未入库数量*/,
+   IsGift            int             /*赠品（1是/2不是）*/,
+   ItemRemark        VARCHAR(20)     /*分录备注*/,
+   TranType          VARCHAR(20)     /*来源单别*/,
+   FromNo            int             /*来源单号*/,
+   PRIMARY key(BillNo,SerNo)     
+)
+
+create table dingdanzhangkuan(
+   BillNo               int PRIMARY key   /*主单ID*/,
+   FacFundsAttribution  VARCHAR(20)       /*账款归属*/,
+   GarherStyle          VARCHAR(20)       /*付款条件*/,
+   GatherDelay          int               /*付款条件里面的天数*/,
+   PrepayDay            date              /*付款日期*/,
+   AccMonth             date              /*付款月份*/             
+)
+
+create  table  dingdanbeizhu(
+   BillNo               int PRIMARY key   /*主单ID*/,
+   HeaderName           VARCHAR(20)       /*表头条文*/,
+   FppterName           VARCHAR(20)       /*表尾条文*/,
+   PsnUsrDef1           VARCHAR(20)       /*自定义栏一*/,
+   PsnUsrDef2           VARCHAR(20)       /*自定义栏二*/,
+   PsnMemo              VARCHAR(20)       /*备注*/
+)
+
+/*
+   表外连接没建，表名没改。
+*/
